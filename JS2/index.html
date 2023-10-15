@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <script>
+    //1
+        let name=prompt("Введите ваше имя")
+        alert(name);
+        let age=prompt("Введите ваш возраст")
+        alert(age);
+        let city=prompt("Введите город, в котором проживаете")
+        alert(city);
+        let email=prompt("Введите адрес электронной почты")
+        alert(email);
+        let phone=prompt("Введите ваш номер")
+        alert(phone);
+        let company=prompt("Введите компанию, в которой вы работаете ")
+        alert(company);
+        document.write("Меня зовут "+name+". Мне "+age+" лет. "+"Я проживаю в городе "+ city+" и работаю в компании "+company+". Мои контактные данные:"+ "тел. "+ phone+", почта. "+email+".<br>")
+        
+        
+        
+    //2
+        let year=2023-age;
+        document.write(name+" родился в "+year+" году.");
+        
+        
+        
+    //3
+        let str = "123456";
+        document.write("<br>Исходное число: "+str);
+        let firstThree = parseInt(str[0]) + parseInt(str[1]) + parseInt(str[2]);
+        let secondThree = parseInt(str[3]) + parseInt(str[4]) + parseInt(str[5]);
+
+        if (firstThree === secondThree) {
+            document.write(" Ответ: да");
+        } else {
+            document.write(" Ответ: нет");
+        }
+
+
+        
+    //4
+        let a = 1;
+
+        if (a > 0) {
+            document.write("<br>a = 1: Верно");
+        } else {
+            document.write("<br>a = 1: Неверно");
+        }
+
+        a = 0;
+        if (a > 0) {
+            document.write("<br>a = 0: Верно");
+        } else {
+            document.write("<br>a = 0: Неверно");
+        }
+
+        a = -3;
+        if (a > 0) {
+            document.write("<br>a = -3: Верно");
+        } else {
+            document.write("<br>a = -3: Неверно");
+        }
+
+
+    //5
+        let a1 =10;
+        let b1=2;
+        document.write("<br>Cумма: " +(a1+b1)+". Разность: "+ (a1-b1)+ ". Произведение: "+(a1*b1)+ ". Частное: "+(a1/b1)+".")
+        if((a1+b1)>1){
+            sum2=Math.pow((a1+b1), 2);
+            document.write(" Cумма в квадрате: "+sum2+ ".")
+        }
+
+
+
+    //6
+        if((a1>2 && a1<11)||(b1>=6 && b1<14)){
+            document.write("<br>Верно");
+        }else{
+            document.write("<br>Неверно");
+        }
+
+
+
+    //7
+        let n=prompt("Введите число от 1 до 59")
+        alert(n);
+        if (n >= 0 && n <= 14) {
+            document.write("<br>Число попадает в первую четверть");
+        } else if (n >= 15 && n <= 29) {
+            document.write("<br>Число попадает во вторую четверть");
+        } else if (n >= 30 && n <= 44) {
+            document.write("<br>Число попадает в третью четверть");
+        } else if (n >= 45 && n <= 59) {
+            document.write("<br>Число попадает в четвертую четверть");
+        } else {
+            document.write("<br>Некорректное число");
+        }
+
+
+
+    //8
+        let day=prompt("Введите число дня от 1 до 31")
+        alert(day);
+         if (day >= 1 && day <= 10) {
+            document.write("<br>Число попадает в первую декаду месяца");
+        } else if (day >= 11 && day <= 20) {
+            document.write("<br>Число попадает во вторую декаду месяца");
+        } else if (day >= 21 && day <= 31) {
+            document.write("<br>Число попадает в третью декаду месяца");
+        } else {
+            document.write("<br>Некорректное число");
+        }
+
+
+
+    //9
+        let days=prompt("Введите количество дней");
+        let years = days / 365;
+        let month = days / 31;
+        let week = days / 7;
+        let hour = days * 24;
+        let minute = hour * 60;
+        let second = minute * 60;
+
+        document.write("<br>Во введенном количестве дней: "); 
+        if ( day < 365){
+            document.write(" Меньше года. ")}
+            else {
+                document.write(years +" лет. ")}; 
+        if ( days < 31){
+            document.write(" Меньше месяца. ")}
+            else {
+                document.write(month +" месяцев. ")}; 
+        if ( days < 7){
+            document.write(" Меньше недели. ")}
+            else{
+                document.write(week +" недель. ")
+            }; 
+
+        document.write(hour +" часов. "); 
+        document.write(minute +" минут. "); 
+        document.write(second +" секнуд ");
+
+
+
+    //10
+        let day3=prompt("Введите число дня от 1 до 365")
+        alert(day3);
+        let month3;
+        if (day3 <= 31) {
+            month3 = "Январь";
+        } else if (day3 <= 59) {
+            month3 = "Февраль";
+        } else if (day3 <= 90) {
+            month3 = "Март";
+        } else if (day3 <= 120) {
+            month3 = "Апрель";
+        } else if (day3 <= 151) {
+            month3 = "Май";
+        } else if (day3r <= 181) {
+            month3 = "Июнь";
+        } else if (day3 <= 212) {
+            month3 = "Июль";
+        } else if (day3 <= 243) {
+            month3 = "Август";
+        } else if (day3 <= 273) {
+            month3 = "Сентябрь";
+        } else if (day3 <= 304) {
+            month3 = "Октябрь";
+        } else if (day3 <= 334) {
+            month3 = "Ноябрь";
+        } else {
+            month3 = "Декабрь"; 
+        }
+
+    switch (month3) {
+        case "Январь":
+        case "Декабрь":
+        case "Февраль":
+            document.write(`<br>Месяц: ${month3}, Пора года: Зима`);
+        break;
+
+        case "Март":
+        case "Апрель":
+        case "Май":
+            document.write(`<br>Месяц: ${month3}, Пора года: Весна`);
+        break;
+
+        case "Июнь":
+        case "Июль":
+        case "Август":
+            document.write(`<br>Месяц: ${month3}, Пора года: Лето`);
+        break;
+        
+        case "Сентябрь":
+        case "Октябрь":
+        case "Ноябрь":
+            document.write(`<br>Месяц: ${month3}, Пора года: Осень`);
+        break;
+    
+    }
+
+
+    </script>
+</body>
+</html>
